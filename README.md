@@ -21,12 +21,12 @@ ii) Refer to sumArraysOnGPU-timer.cu, and let block.x = 256. Make a new kernel t
 6.Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## Program:
-
+```
 Developed By: Manoj Guna Sundar Tella.
 Reg.No:212221240026.
-
+```
 ## 1. Block.x=1023
-
+```
 #include "../common/common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -176,9 +176,9 @@ int main(int argc, char **argv)
 
     return(0);
 }
-
+```
 ## 2. Block.x=1024
-
+```
 #include "../common/common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -328,9 +328,9 @@ int main(int argc, char **argv)
 
     return(0);
 }
-
+```
 ## 3. Block.x=256
-
+```
 #include "../common/common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -480,7 +480,7 @@ int main(int argc, char **argv)
 
     return(0);
 }
-
+```
 ## Output:
 ## 1. Block.x=1023
 ![pca](https://user-images.githubusercontent.com/93427522/235587668-9111575b-bef8-44af-bc68-e00d86bffc2a.png)
@@ -499,3 +499,4 @@ int main(int argc, char **argv)
 i) Thus the program to compare the execution time and result of summing two arrays using CUDA programming by setting block.x = 1023 and block.x = 1024 has been successfully implemented and verified.
 
 ii) Thus the program to To analyze the impact of changing execution configuration on the execution time and result of summing two arrays using CUDA programming by letting each thread handle two elements and setting block.x = 256 has been successfully implemented and verified.
+
